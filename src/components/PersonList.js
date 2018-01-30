@@ -1,13 +1,12 @@
 import React from 'react'
 import Person from './Person'
 
-const PersonList = ({ persons, onTodoClick }) => (
+const PersonList = ({ persons }) => (
   <ul>
     {persons.map(person =>
       <Person
         key={person.id}
         person = {person}
-        onClick={() => onTodoClick(person.id)}
       />
     )}
   </ul>

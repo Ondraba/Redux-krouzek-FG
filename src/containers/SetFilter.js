@@ -25,11 +25,8 @@ let SetFilter = ({ dispatch }) => {
   )
 }
 
-const mapStateToProps = ({filter}) => {
-  return {filter}
-}
 
-SetFilter = connect(mapStateToProps)(SetFilter)
+SetFilter = connect()(SetFilter)
 
 export default SetFilter
 
