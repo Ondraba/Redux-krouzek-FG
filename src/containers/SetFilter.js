@@ -1,0 +1,35 @@
+import React from 'react'
+import { connect } from 'react-redux'
+import { setFilter } from '../actions'
+
+let SetFilter = ({ dispatch }) => {
+  let filter
+
+  return (
+    <div>
+      <form onSubmit={e => {
+        e.preventDefault()
+        if (!filter.value.trim()) {
+          return
+        }
+        dispatch(setFilter(filter.value))
+      }}>
+        <input ref={node => {
+          filter = node
+        }} />
+        <button type="submit">
+         Add Sex
+        </button>
+      </form>
+    </div>
+  )
+}
+
+const mapStateToProps = ({filter}) => {
+  return {filter}
+}
+
+SetFilter = connect(mapStateToProps)(SetFilter)
+
+export default SetFilter
+
