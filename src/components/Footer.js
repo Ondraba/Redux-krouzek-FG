@@ -1,8 +1,8 @@
 import React from 'react'
 
-export default({text}) => (
+export default() => (
   <p>
-    {text}
+    FG Redux 1
   </p>
 )
 
