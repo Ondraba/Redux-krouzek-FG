@@ -6,9 +6,9 @@ import PersonListDriver from '../containers/PersonListDriver'
 
 const App = () => (
   <div>
-    <AddTodo />
+    {/* <AddTodo />
     <PersonListDriver />
-    <SetFilter />
+    <SetFilter /> */}
     <Footer />
   </div>
 )
